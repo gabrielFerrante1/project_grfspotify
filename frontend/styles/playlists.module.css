@@ -1,0 +1,49 @@
+.contentHeader {
+    display: flex;
+    margin-top: 16px;
+    flex-direction: row; 
+}
+
+.contentHeaderButton {
+    margin-right: 15px;
+    background-color: rgb(10, 212, 61); 
+    border-radius: 40px;
+    outline: none;
+    color: white;
+    padding: 6px 9px;
+    font-size: 14.5px;
+    width: 140px;
+    height: 40px;
+    border: none;
+    transition: all 0.3s;
+}
+
+.contentHeaderButton:hover {
+    background-color: transparent;
+    border: 2px solid rgb(10, 212, 61);
+}
+
+.contentBody {
+    border-top: 1px solid rgb(101, 100, 100);
+    margin: 12px 0; 
+}
+
+.contentListPlaylist { 
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(6, 1fr);
+} 
+
+@media (max-width: 1340px) {
+    .contentListPlaylist {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (max-width: 1490px) {
+    .contentListPlaylist { grid-template-columns: repeat(4, 1fr); }
+}
+
+@media (max-width: 1090px) {
+    .contentListPlaylist { grid-template-columns: repeat(3, 1fr); }
+}
