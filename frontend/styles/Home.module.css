@@ -1,0 +1,57 @@
+.container {
+  margin: 20px 30px;
+}
+
+.title {
+  font-size: 24px;
+  margin-bottom: 7px;
+  color: white;
+}
+
+.gridGenre {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+}
+
+.genre {
+  width: auto;
+  height: 130px;
+  border-radius: 10px;
+  padding: 0px 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.nameGenre {
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  margin-bottom: 9px;
+}
+
+.contentListPlaylist {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(5, 2fr);
+  padding: 0 30px;
+}
+
+@media (max-width: 1340px) {
+  .contentListPlaylist {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 1490px) {
+  .contentListPlaylist {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 1090px) {
+  .contentListPlaylist {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
